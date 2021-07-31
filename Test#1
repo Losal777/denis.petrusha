@@ -1,0 +1,10 @@
+nums=(input('Enter any even number amount'))
+Enter any even number amount1234
+>>> if nums.isdigit():
+	print ('OK')
+else:
+	print('Error')
+
+	
+OK
+>>> 
