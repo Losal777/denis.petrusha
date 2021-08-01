@@ -1,16 +1,16 @@
 nums = (input('Enter any even number amount: '))
 if nums.isdigit():
-	print('OK')
+    print('OK')
 else:
-	print('Error')
-list(nums)
-length = len(nums)
-middle_index = length//2
-first_half = nums[:middle_index]
+    print('Error')
+nums_list = list(nums)
+length = len(nums_list)
+middle_index = length // 2
+first_half = nums_list[:middle_index]
 print(first_half)
-second_half = nums[middle_index:]
+second_half = nums_list[middle_index:]
 print(second_half)
-if first_half == second_half:
-	print("You're the lucky one!")
+if sum(first_half) == sum(second_half):
+    print("You're the lucky one!")
 else:
-	print("Not today")
+    print("Not today")
