@@ -1,10 +1,16 @@
-nums=(input('Enter any even number amount'))
-Enter any even number amount1234
->>> if nums.isdigit():
-	print ('OK')
+nums = (input('Enter any even number amount: '))
+if nums.isdigit():
+	print('OK')
 else:
 	print('Error')
-
-	
-OK
->>> 
+list(nums)
+length = len(nums)
+middle_index = length//2
+first_half = nums[:middle_index]
+print(first_half)
+second_half = nums[middle_index:]
+print(second_half)
+if first_half == second_half:
+	print("You're the lucky one!")
+else:
+	print("Not today")
