@@ -4,6 +4,7 @@ if nums.isdigit():
 else:
     print('Error')
 nums_list = list(nums)
+nums_list = list(map(int, nums_list))
 length = len(nums_list)
 middle_index = length // 2
 first_half = nums_list[:middle_index]
